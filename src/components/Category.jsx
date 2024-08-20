@@ -6,7 +6,9 @@ const Category = () => {
     const [slide,setSlide] = useState(0);
     const [categories, setCategory] = useState([]);
     const fetchCategory = async () => {
-        const response = await fetch('/data/category.json');
+        // const response = await fetch('/data/category.json');
+        const response = await fetch('/swiggy-clone-using_reactJS_tailwind/public/data/category.json');
+        
         const data = await response.json();
         setCategory(data);
     }

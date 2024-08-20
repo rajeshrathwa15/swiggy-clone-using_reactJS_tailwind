@@ -22,7 +22,8 @@ const OnlineDelivery = () => {
 
 
     const fetchTopRestaurant = async () => {
-        const response = await fetch('/data/restaurantChains.json');
+        // const response = await fetch('/data/restaurantChains.json');
+        const response = await fetch('/swiggy-clone-using_reactJS_tailwind/public/data/restaurantChains.json');
         const apiData = await response.json();
         setData(apiData);
     }
